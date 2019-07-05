@@ -1,0 +1,122 @@
+/* Global Resets */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+#container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+}
+
+h1, h2 {
+  font-family: 'DM Serif Display', serif;
+}
+
+h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-image: url(../images/thom-schneider-iSYYLt2rKac-unsplash.jpg);
+  background-size: 100%;
+  background-color: #000;
+  height: 250px;
+  padding-top: 90px;
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 20px;
+  height: 50px;
+  padding: 10px;
+  font-family: 'DM Serif Display', serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.intro {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sign-air {
+  width: 275px;
+  height: 275px;
+  padding: 10px;
+  background-color: #bef9f9;
+  border-radius: 5px;
+  color: #000;
+}
+
+.sign-fire {
+  width: 275px;
+  height: 275px;
+  padding: 10px;
+  background-color: #d42f0a;
+  border-radius: 5px;
+  color: #fff;
+
+}
+.sign-water {
+  width: 275px;
+  height: 275px;
+  padding: 10px;
+  background-color: darkturquoise;
+  border-radius: 5px;
+  color: #fff;
+
+}
+.sign-earth {
+  width: 275px;
+  height: 275px;
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 5px;
+  color: #000;
+
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.horoscope-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-image: url(../images/thom-schneider-iSYYLt2rKac-unsplash.jpg);
+  background-size: 100%;
+  background-color: #000;
+  height: 100px;
+  margin-top: 50px;
+}
