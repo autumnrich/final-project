@@ -2,115 +2,115 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Your Daily Horoscope</title>
+    <title>Daily Horoscope</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Poppins:300,400,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Your Daily Horoscope</h1>
-      <h2>By Element</h2>
+      <h1>Daily Horoscope</h1>
+      <section class="intro">
+        <blockquote>
+          Seeing the world in terms of <strong>elements</strong> is a tradition that goes back thousands of years throughout many cultures. The elements represent the basic principles of life. Western Astrology uses four elements, <strong>Fire, Earth, Air and Water,</strong> and each of the 12 zodiac signs falls into one of these categories.
+        </blockquote>
+      </section>
     </header>
     <div id="container">
-      <section class="intro">
-        <p>Seeing the world in terms of <strong>elements</strong> is a tradition that goes back thousands of years throughout many cultures. The elements represent the basic principles of life, and different systems have delineated the elements in various ways.</p>
-    <p>Western Astrology uses four elements...<strong>Fire, Earth, Air and Water</strong>...and each of the 12 zodiac signs falls into one of these categories.</p>
-      </section>
-      <!-- Air Section -->
+      <!-- Air Section boxes -->
       <section class="intro">
         <h2>Air</h2>
         <p>Air signs are known for being more detached and cerebral than others. Air signs aren’t overly emotional, which gives them the ability to think logically and to achieve a broad overview of their idea.</p>
         </section>
         <section class="element">
           <a href="#gemini-info">
-            <div class="sign-air">
+            <div id="gemini-box" class="box">
           <h3>Gemini</h3>
           <h4>MAY 21 - JUN 20</h4>
         </div>
         </a>
         <a href="#libra-info">
-          <div class="sign-air">
+          <div id="libra-box" class="box">
             <h3>Libra</h3>
             <h4>SEP 23 - OCT 22</h4>
           </div>
         </a>
         <a href="#aquarius-info">
-          <div class="sign-air">
+          <div id="aquarius-box" class="box">
             <h3>Aquarius</h3>
             <h4>JAN 20 - FEB 18</h4>
           </div>
         </a>
     </section>
-    <!-- Fire Section -->
+    <!-- Fire Section boxes -->
     <section class="intro">
       <h2>Fire</h2>
       <p>Fire signs are known as the ones who bring joy, color and sass to what would be an otherwise dull world. This is energy that can’t be contained and rightly so.</p>
       </section>
       <section class="element">
         <a href="#aries-info">
-          <div class="sign-fire">
+          <div id="aries-box" class="box">
           <h3>Aries</h3>
           <h4>MAR 21 - APR 19</h4>
         </div>
         </a>
         <a href="#leo-info">
-          <div class="sign-fire">
+          <div id="leo-box" class="box">
             <h3>Leo</h3>
             <h4>JUL 23 - AUG 22</h4>
           </div>
         </a>
       <a href="#sagittarius-info">
-      <div class="sign-fire">
+      <div id="sagittarius-box" class="box">
         <h3>Sagittarius</h3>
         <h4>NOV 22 - DEC 21</h4>
       </div>
       </a>
       </section>
-      <!-- Water Section -->
+      <!-- Water Section boxes -->
       <section class="intro">
         <h2>Water</h2>
         <p>Without a doubt, the Water element is the most sensitive and intuitive. This element is capable of nourishing our soul through a deep, psychic understanding of what makes us operate.</p>
         </section>
         <section class="element">
           <a href="#cancer-info">
-          <div class="sign-water">
+          <div id="cancer-box" class="box">
           <h3>Cancer</h3>
           <h4>JUN 21 - JUL 22</h4>
         </div>
         </a>
         <a href="#scorpio-info">
-        <div class="sign-water">
+        <div id="scorpio-box" class="box">
           <h3>Scorpio</h3>
           <h4>OCT 23 - NOV 21</h4>
         </div>
         </a>
-        <a href="#pices-info">
-        <div class="sign-water">
-          <h3>Pices</h3>
+        <a href="#pisces-info">
+        <div id="pisces-box" class="box">
+          <h3>Pisces</h3>
           <h4>FEB 19 - MAR 20</h4>
         </div>
         </a>
         </section>
-      <!-- Earth Section -->
+      <!-- Earth Section boxes -->
       <section class="intro">
         <h2>Earth</h2>
         <p>Earth has the ability to their material instinct to ensure physical security is maintained, while also achieving a thorough enjoyment and appreciation of everything the physical world has to offer.</p>
         </section>
         <section class="element">
           <a href="#taurus-info">
-          <div class="sign-earth">
+          <div id="taurus-box" class="box">
           <h3>Taurus</h3>
           <h4>APR 20 - MAY 20</h4>
         </div>
         </a>
         <a href="#virgo-info">
-        <div class="sign-earth">
+        <div id="virgo-box" class="box">
           <h3>Virgo</h3>
           <h4>AUG 23 - SEP 22</h4>
         </div>
         </a>
         <a href="#capricorn-info">
-        <div class="sign-earth">
+        <div id="capricorn-box" class="box">
           <h3>Capricorn</h3>
           <h4>DEC 22 - JAN 19</h4>
         </div>
@@ -118,87 +118,149 @@
         </section>
         <!-- All Signs Section -->
         <section>
-          <section class="date">
-            <button type="button" name="button">Yesterday</button><h2>Today's Date</h2><button type="button" name="button">Tomorrow</button>
+          <section id="date">
+            <h2>Today's Date</h2>
           </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="gemini-info">Gemini</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="libra-info">Libra</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="aquarius-info">Aquarius</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="aries-info">Aries</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="leo-info">Leo</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="sagittarius-info">Sagittarius</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="cancer-info">Cancer</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="scorpio-info">Scorpio</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="pices-info">Pices</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="taurus-info">Taurus</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="virgo-info">Virgo</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
-          <section class="horoscope-list">
-            <hr>
-            <h2 id="capricorn-info">Capricorn</h2>
-            <p>[Lorem ipsum dolor sit amet, has cu unum sonet. Purto tacimates repudiandae ex eos. Nam inermis nusquam omittam no, sit in quod iisque, ius ad justo nusquam volutpat. Eum nullam apeirian tractatos ut, his habeo euripidis abhorreant te. Tation graece disputando mel te, qui scriptorem disputationi ea, pri quaeque facilis periculis te. Iisque feugiat fabellas ea quo, no vitae timeam dignissim vim, quas solum cu mei. Tollit tincidunt sed te, nullam iisque perfecto per an, qui falli dicam sanctus ei.]</p>
-            <a href="#"><p>back to top</p></a>
-          </section>
+            <!-- Gemini -->
+            <section class="horoscope-list" id="gemini-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_gemini.svg" alt="gemini">
+                <h2>Gemini</h2>
+              </section>
+              <p id="gemini">
+
+              </p>
+              <a href="#gemini-box"><p class="back-to-top">back to top</p></a>
+            </section>
+              <!-- Libra -->
+              <section class="horoscope-list" id="libra-info">
+                <section class="horoscope-list-header">
+                  <img class="listimg"src="images/signs_libra.svg" alt="libra">
+                  <h2>Libra</h2>
+                </section>
+                <p id="libra">
+
+                </p>
+                <a href="#libra-box"><p class="back-to-top">back to top</p></a>
+              </section>
+            <!-- Aquarius -->
+            <section class="horoscope-list" id="aquarius-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_aquarius.svg" alt="aquarius">
+                <h2>Aquarius</h2>
+              </section>
+              <p id="aquarius">
+
+              </p>
+              <a href="#aquarius-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Aries -->
+            <section class="horoscope-list" id="aries-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_aries.svg" alt="aries">
+                <h2>Aries</h2>
+              </section>
+              <p id="aries">
+
+              </p>
+              <a href="#aries-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Leo -->
+            <section class="horoscope-list" id="leo-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_leo.svg" alt="leo">
+                <h2>Leo</h2>
+              </section>
+              <p id="leo">
+
+              </p>
+              <a href="#leo-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Sagittarius -->
+            <section class="horoscope-list" id="sagittarius-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_sagittarius.svg" alt="sagittarius">
+                <h2>Sagittarius</h2>
+              </section>
+              <p id="sagittarius">
+
+              </p>
+              <a href="#sagittarius-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Cancer -->
+            <section class="horoscope-list" id="cancer-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_cancer.svg" alt="cancer">
+                <h2>Cancer</h2>
+              </section>
+              <p id="cancer">
+
+              </p>
+              <a href="#cancer-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Scorpio -->
+            <section class="horoscope-list" id="scorpio-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_scorpio.svg" alt="scorpio">
+                <h2>Scorpio</h2>
+              </section>
+              <p id="scorpio">
+
+              </p>
+              <a href="#scorpio-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Pisces -->
+            <section class="horoscope-list" id="pisces-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_pisces.svg" alt="pisces">
+                <h2>Pisces</h2>
+              </section>
+              <p id="pisces">
+
+              </p>
+              <a href="#pisces-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Taurus -->
+            <section class="horoscope-list" id="taurus-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_taurus.svg" alt="taurus">
+                <h2>Taurus</h2>
+              </section>
+              <p id="taurus">
+
+              </p>
+              <a href="#taurus-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Virgo -->
+            <section class="horoscope-list" id="virgo-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_virgo.svg" alt="virgo">
+                <h2>Virgo</h2>
+              </section>
+              <p id="virgo">
+
+              </p>
+              <a href="#virgo-box"><p class="back-to-top">back to top</p></a>
+            </section>
+            <!-- Capricorn -->
+            <section class="horoscope-list" id="capricorn-info">
+              <section class="horoscope-list-header">
+                <img class="listimg"src="images/signs_capricorn.svg" alt="capricorn">
+                <h2>Capricorn</h2>
+              </section>
+              <p id="capricorn">
+
+              </p>
+              <a href="#capricorn-box"><p class="back-to-top">back to top</p></a>
+            </section>
         </section>
 
     </div>
     <footer>
+      <p>photo credit:
       <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@thomschneider?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Thom Schneider"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Thom Schneider</span></a>
+      </p>
     </footer>
-    <script src="horoscope.js" charset="uf8"></script>
+    <script src="assets/horoscope.js" charset="uf8"></script>
   </body>
 </html>

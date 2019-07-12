@@ -8,8 +8,8 @@
 
 /* Global Styles */
 #container {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 h1 {
@@ -19,9 +19,16 @@ h1 {
 
 h1, h2 {
   font-family: 'DM Serif Display', serif;
+  margin-top: 20px;;
+  margin-bottom: 20px;
 }
 
-h3, h4 {
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
@@ -31,28 +38,37 @@ p {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(../images/thom-schneider-iSYYLt2rKac-unsplash.jpg);
   background-size: 100%;
   background-color: #000;
-  height: 250px;
-  padding-top: 90px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   color: #fff;
+}
+
+blockquote {
+margin-left: 10%;
+margin-right: 10%;
+font-family: 'Poppins', sans-serif;
+font-weight: 300;
+font-size: 1.25em;
+border: solid;
+border-width: thin;
+border-color: inherit;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.5);
 }
 
 a {
   text-decoration: none;
 }
 
-button {
-  border-radius: 20px;
-  height: 50px;
-  padding: 10px;
-  font-family: 'DM Serif Display', serif;
-  background-color: #000;
-  color: #fff;
-}
-
+/* Sign boxes */
 .intro {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -62,61 +78,127 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-.sign-air {
-  width: 275px;
-  height: 275px;
-  padding: 10px;
-  background-color: #bef9f9;
+/* Sign boxes*/
+.box {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
   border-radius: 5px;
   color: #000;
+  text-align: center;
+  background-size: 60%;
+  background-position: bottom 20px center;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+/* Sign boxes air*/
+#gemini-box {
+  background-image: url('../images/signs_gemini.svg');
+  background-color: #b7f0f9;
 }
 
-.sign-fire {
-  width: 275px;
-  height: 275px;
-  padding: 10px;
-  background-color: #d42f0a;
-  border-radius: 5px;
-  color: #fff;
-
+#libra-box {
+  background-image: url('../images/signs_libra.svg');
+  background-color: #b7f0f9;
 }
-.sign-water {
-  width: 275px;
-  height: 275px;
-  padding: 10px;
+
+#aquarius-box {
+  background-image: url('../images/signs_aquarius.svg');
+  background-color: #b7f0f9;
+}
+
+/* Sign boxes fire*/
+#aries-box {
+  background-image: url('../images/signs_aries.svg');
+  background-color: #e87d30;
+}
+
+#leo-box {
+  background-image: url('../images/signs_leo.svg');
+  background-color: #e87d30;
+}
+
+#sagittarius-box {
+  background-image: url('../images/signs_sagittarius.svg');
+  background-color: #e87d30;
+}
+
+/* Sign boxes water*/
+#cancer-box {
+  background-image: url('../images/signs_cancer.svg');
   background-color: darkturquoise;
-  border-radius: 5px;
-  color: #fff;
-
 }
-.sign-earth {
-  width: 275px;
-  height: 275px;
-  padding: 10px;
+
+#scorpio-box {
+  background-image: url('../images/signs_scorpio.svg');
+  background-color: darkturquoise;
+}
+
+#pisces-box {
+  background-image: url('../images/signs_pisces.svg');
+  background-color: darkturquoise;
+}
+
+/* Sign boxes earth*/
+#taurus-box {
+  background-image: url('../images/signs_taurus.svg');
   background-color: burlywood;
-  border-radius: 5px;
-  color: #000;
-
 }
 
-.date {
+#virgo-box {
+  background-image: url('../images/signs_virgo.svg');
+  background-color: burlywood;
+}
+
+#capricorn-box {
+  background-image: url('../images/signs_capricorn.svg');
+  background-color: burlywood;
+}
+
+#date {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 100px;
   margin-bottom: 30px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 2em;
 }
 
+.listimg{
+  width: 7%;
+  margin-right: 10px;
+}
+.horoscope-list-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
 .horoscope-list {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  line-height: 2em;
+  border-top: solid;
+  border-color: gray;
+  border-width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+.back-to-top {
+  margin-top: 20px;
+  color: darkturquoise;
 }
 
 footer {
   background-image: url(../images/thom-schneider-iSYYLt2rKac-unsplash.jpg);
   background-size: 100%;
   background-color: #000;
-  height: 100px;
+  height: 200px;
   margin-top: 50px;
+  padding:20px;
+  color: #fff;
 }
